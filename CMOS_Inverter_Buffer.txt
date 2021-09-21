@@ -23,7 +23,9 @@ Setting up grid (grid 0.05um 0.05um), snap (snap user), drc (drc style drc(full)
 
 5. Draw contacts to the ndiffusion by paint local interconnect(li), and then paint ndiffusion contact(ndc). Copy this contact on the other side of ndiff!
 
-6. Then make a merged p-substrate contact on left side, by paint pdiffusion substrate(pds), extend the local interconnect, and place the p-substrate contact (psc). If getting around 16 or 24 drc errors u have probably made all the contacts(ndc,psc) larger in size so try to reduce them to get off the drc errors! (feel free to do drc why)
+6. Then make a merged p-substrate contact on left side, by paint pdiffusion substrate(pds), extend the local interconnect, and place the p-substrate contact (psc). 
+If getting around 16 or 24 drc errors u have probably made all the contacts(ndc,psc) larger in size so try to reduce them to get off the drc errors! 
+(feel free to do drc why)
 
 7. Here is your n channel-transistor
 
@@ -31,13 +33,18 @@ Setting up grid (grid 0.05um 0.05um), snap (snap user), drc (drc style drc(full)
 
 9. Now to turn nchann to pchann, we need to paint nwell(paint nwell) on above the nchann then magic will automatically turn that to a pchannel-transistor.
 
-10. Then we will have some drc errors as nwell is close to nsub and to get rid of that extend your nwell according to dashed line that reflects across the pchannel transistor. 
+10. Then we will have some drc errors as nwell is close to nsub and to get rid of that extend your nwell according to dashed line that reflects across the 
+pchannel transistor. 
 
-11. So our pchannel transistor is ready now and to make an inverter we need to connect the poly and extend the li(paint li) to connect the drains together, and make a poly contact at the end by extending the poly to box(400x400 nm) and paint li, polycontact (paint pc). 
+11. So our pchannel transistor is ready now and to make an inverter we need to connect the poly and extend the li(paint li) to connect the drains together, 
+and make a poly contact at the end by extending the poly to box(400x400 nm) and paint li, polycontact (paint pc). 
 
-12. To make input and output connection extend the local interconnect from poly to left and the drain to right. And paint metal1 layer(paitn m1) on both the ntran ptran, covering the complete local interconnect of the cell in terms of height and the width should be equal to the nwell we made on the ptran!
+12. To make input and output connection extend the local interconnect from poly to left and the drain to right. And paint metal1 layer(paitn m1) on both 
+the ntran ptran, covering the complete local interconnect of the cell in terms of height and the width should be equal to the nwell we made on the ptran!
 
-13. Now paint the metal contacts(paint mcon) on the subs and sources of the ntran and ptran,then comes the task to label and define ports for the circuit. So bring the plus sign(left click and right click on same place) to the poly extended locali and label it as A (input (label A w)). likewise name all the ports such as Y for output VP for VDD and VN for GND.
+13. Now paint the metal contacts(paint mcon) on the subs and sources of the ntran and ptran,then comes the task to label and define ports for the circuit.
+So bring the plus sign(left click and right click on same place) to the poly extended locali and label it as A (input (label A w)). Likewise name all 
+the ports such as Y for output VP for VDD and VN for GND.
 
 14. Finally check that the locali's width of port Y and port A in the same axis of the nwell by clicking s or select !
 
@@ -45,11 +52,14 @@ Setting up grid (grid 0.05um 0.05um), snap (snap user), drc (drc style drc(full)
 
 --- Buffer
 
-16. To make a buffer just set box size to 0.05um 0.05um, the grid size we set for the inverter. And do getcell inverter, this will get the instance of the inverter and we can press x to view the hidden inv cell!
+16. To make a buffer just set box size to 0.05um 0.05um, the grid size we set for the inverter. And do getcell inverter, this will get the instance of the
+inverter and we can press x to view the hidden inv cell!
 
-17. Now do getcell inverter again after aligning the box parallel to instance_0 and that will create a connected instance_1 inv cell. If Drain of instance_0 doesnot connect with poly of instance_1, then you should go back to inverter cell and edit the drain locali.
+17. Now do getcell inverter again after aligning the box parallel to instance_0 and that will create a connected instance_1 inv cell. If Drain of 
+instance_0 doesnot connect with poly of instance_1, then you should go back to inverter cell and edit the drain locali.
 
-18. Finally locali and metal m1 layer on top of the inverter layers to label in the buffer hierarchy, after doing that label all the buffer layers and press shift x now u should see the buffer layers only with inverter instances hidden.
+18. Finally locali and metal m1 layer on top of the inverter layers to label in the buffer hierarchy, after doing that label all the buffer layers and
+press shift x now u should see the buffer layers only with inverter instances hidden.
 
 19. COOL YOUR BUFFER IS READY!!!!! save, extract all.
 
