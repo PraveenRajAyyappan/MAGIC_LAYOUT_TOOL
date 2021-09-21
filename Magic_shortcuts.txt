@@ -51,3 +51,5 @@ Extract stuffs.....
 2.  ext2spice hierarchy on  -	  turns on the parameters to extract out a hierarchical layout | Both commands are related to
 3.  ext2spice scale off     -     turns off the general extract parameters                     | LVS Settings.
 4.  ext2spice               -     Generates a spice file which u can use to simulate 
+
+
