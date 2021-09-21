@@ -1,0 +1,53 @@
+LIFE SAVING MAGIC SHORTCUTS! -- will be updating it if I find new ones!
+
+NOTE: IF YOU FIND ANY ERROR OR TYPOS PLEASE STATE THAT IN GITHUB REPO ISSUES CORNER. AND ALSO FEEL FREE TO CHECK THE
+MAGIC's OFFICAL WEBSITE TO CONFIRM THE COMMANDS IF YOU HAVE ANY DOUBTS(http://opencircuitdesign.com/magic/) 
+
+xxxxxxxxxxxxxxxxxxxxxxxxx HERE IT BEGINS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Zooming stuffs...
+
+1.  z                       -     zoom
+2.  shift z                 -     zoom out
+3.  ctrl z                  -     zooms to the box
+4.  v                       -     Full view
+5.  x                       -     shows the hidden cell
+6.  shift x                 -     hides the cell
+
+
+Box and manipulating related stuffs....
+
+1.  b,box                   -     view box size
+2.  box size                -     set size of the box
+3.  s,select                -     selects the entire cell 
+4.  s s s (2 or 3 click)    -     flashes the nets and the nodes
+5.  select area             -     selects the complete area of the cell
+6.  copy                    -     copies the selected area of the cell
+7.  move n 30               -     moves the selected area by 0.3um north
+8.  u                       -     undo
+9.  label A w               -     labels it A and locates it in west dir
+10. erase label             -     erases the label
+11. port make 1             -     makes the label a port with index 1
+12. port remove             -     removes the port
+
+
+
+Grid stuffs....
+
+1.  g, grid                 -     grid on,off
+2.  grid 0.05um 0.05um      -     set grid size
+3.  snap user               -     draws box w.r.t grid size
+
+
+DRC stuffs.....
+
+1.  drc style drc(full)     -     enabling DRC 
+2.  drc why                 -     prints DRC error
+
+
+Extract stuffs.....
+
+1.  extrall all             -     extracts the magic file to a electrical representation file
+2.  ext2spice hierarchy on  -	  turns on the parameters to extract out a hierarchical layout | Both commands are related to
+3.  ext2spice scale off     -     turns off the general extract parameters                     | LVS Settings.
+4.  ext2spice               -     Generates a spice file which u can use to simulate 
